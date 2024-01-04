@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className="bg-stone-50 py-6 tails-selected-element">
+    <section className="bg-[--sand-1] py-6 tails-selected-element">
       <div className="px-10 mx-auto max-w-7xl">
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <a href="#_" className="flex items-center text-lg font-bold">
