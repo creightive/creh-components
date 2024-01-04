@@ -1,11 +1,8 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
-// We want each package to be responsible for its own content.
-const config: Omit<Config, "content"> = {
+export const crehPreset: Omit<Config, 'content'> = {
   theme: {
-    extend: {
-    },
+    extend: {},
   },
   plugins: [],
-};
-export default config;
+}
