@@ -128,7 +128,6 @@ const IntegrationsSection = () => {
               className="w-10 h-10"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512.002 512.002"
-              style={{ enableBackground: 'new 0 0 512.002 512.002' }}
               xmlSpace="preserve"
             >
               <path
@@ -169,7 +168,6 @@ const IntegrationsSection = () => {
               className="w-10 h-10"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 434.016 434.016"
-              style={{ enableBackground: 'new 0 0 434.016 434.016' }}
               xmlSpace="preserve"
             >
               <path
