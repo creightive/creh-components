@@ -18,7 +18,7 @@ const FeaturesSection = () => {
         </h2>
         <p className="w-full max-w-2xl mx-0 mx-auto mt-4 mb-0  text-sm font-medium leading-relaxed text-center text-[--sand-11] border-0 border-stone-200 lg:text-lg md:text-base">
           Check out our set of awesome features and tools. We are the industry leaders in providing
-          quality tools, trusted and used by over 1,200 companies. We kind'of rock!
+          quality tools, trusted and used by over 1,200 companies. We kind&apos;f rock!
         </p>
       </div>
       <div className="z-10 grid gap-5 md:grid-cols-6 lg:grid-cols-9">
@@ -163,7 +163,7 @@ const FeaturesSection = () => {
                 Simple
               </h6>
               <p className="box-border mx-0 mt-1 mb-0 font-medium leading-loose text-[--sand-11] border-solid sm:mt-4">
-                We've built one of the simplest tools to integrate into your current system.
+                We&apos;ve built one of the simplest tools to integrate into your current system.
               </p>
             </div>
           </div>

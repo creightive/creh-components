@@ -19,21 +19,6 @@ const HeroSection = () => {
             unlock resources to boost your job search. Your dream developer job is just a few clicks
             away.
           </p>
-          {/*<a*/}
-          {/*  href="#_"*/}
-          {/*  data-rounded="rounded"*/}
-          {/*  className="inline-flex items-center px-4 py-2 mr-1 font-bold text-white bg-indigo-500 rounded hover:bg-indigo-600"*/}
-          {/*  data-primary="indigo-500"*/}
-          {/*>*/}
-          {/*  Try For Free →*/}
-          {/*</a>*/}
-          {/*<a*/}
-          {/*  href="#_"*/}
-          {/*  data-rounded="rounded"*/}
-          {/*  className="inline-flex items-center px-4 py-2 font-bold text-gray-700 lowercase bg-gray-200 rounded hover:bg-gray-300 hover:text-gray-900"*/}
-          {/*>*/}
-          {/*  Learn more*/}
-          {/*</a>*/}
         </div>
         <div
           className="h-48 max-w-4xl mx-8 mt-16 overflow-hidden text-white lowercase bg-transparent border-2 border-b-0 border-gray-200 rounded-b-none lg:mx-auto rounded-xl sm:h-64 md:h-96"

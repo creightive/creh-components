@@ -33,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="#_" className="px-2 text-stone-500 hover:text-stone-600">
-                FAQ's
+                FAQ&apos;s
               </a>
             </li>
             <li>
