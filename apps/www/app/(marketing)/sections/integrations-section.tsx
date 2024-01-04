@@ -14,7 +14,7 @@ const IntegrationsSection = () => {
         </svg>
         <h2 className="text-stone-900 text-3xl font-bold ">Connect to 1,000+ apps.</h2>
         <p className="text-stone-600 text-lg text-left sm:text-center max-w-lg mt-5">
-          We have built integrations to work seemlessly with Zapier referred to as Zaps. This means
+          We have built integrations to work seamlessly with Zapier referred to as Zaps. This means
           that you can connect our app with thousands of other popular third-party services 🙌
         </p>
         <a href="#_" className="text-orange-500 font-bold text-lg mt-5 flex items-center group">
