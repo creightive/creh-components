@@ -1,7 +1,10 @@
-import { Button as HeadlessButton, type ButtonProps as HeadlessButtonProps } from '@headlessui/react'
+import {
+  Button as HeadlessButton,
+  type ButtonProps as HeadlessButtonProps,
+} from '@headlessui/react'
 import { clsx } from 'clsx'
 import React from 'react'
-import { Link } from './link'
+import { Link } from '../link/link'
 
 let styles = {
   base: [
@@ -180,16 +183,23 @@ export type ButtonProps = (
   | { color?: keyof typeof styles.colors; outline?: never; plain?: never }
   | { color?: never; outline: true; plain?: never }
   | { color?: never; outline?: never; plain: true }
-) & { children: React.ReactNode } & (HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)
+) & { children: React.ReactNode } & (
+    | HeadlessButtonProps
+    | React.ComponentPropsWithoutRef<typeof Link>
+  )
 
 export const Button = React.forwardRef(function Button(
   { color, outline, plain, className, children, ...props }: ButtonProps,
-  ref: React.ForwardedRef<HTMLElement>
+  ref: React.ForwardedRef<HTMLElement>,
 ) {
   let classes = clsx(
     className,
     styles.base,
-    outline ? styles.outline : plain ? styles.plain : clsx(styles.solid, styles.colors[color ?? 'dark/zinc'])
+    outline
+      ? styles.outline
+      : plain
+      ? styles.plain
+      : clsx(styles.solid, styles.colors[color ?? 'dark/zinc']),
   )
 
   return 'href' in props ? (

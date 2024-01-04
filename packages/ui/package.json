@@ -4,24 +4,42 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "sideEffects": false,
   "license": "MIT",
   "files": [
     "dist/**"
   ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./styles.css": "./dist/index.css"
+  },
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "build:css": "tailwindcss -i ./src/css/main.css -o dist/index.css",
+    "dev:css": "tailwindcss -i ./src/css/main.css -o ./dist/index.css --watch",
+    "build:js": "tsup",
+    "dev:js": "tsup --watch",
+    "build": "concurrently \"pnpm build:css\" \"pnpm build:js\"",
+    "dev": "concurrently \"pnpm dev:css\" \"pnpm dev:js\"",
     "lint": "eslint . --max-warnings 0",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "jest"
   },
   "devDependencies": {
+    "@acme/tailwind-preset": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
     "eslint": "^8.54.0",
     "react": "^18.2.0",
+    "tailwindcss": "^3.3.5",
     "tsup": "^8.0.1",
     "typescript": "^5.3.2"
   },

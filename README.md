@@ -90,7 +90,7 @@ acme-core
 
 Each file inside of `acme-core/src` is a component inside our design system. For example:
 
-```tsx:acme-core/src/Button.tsx
+```tsx:acme-core/src/button.tsx
 import * as React from 'react';
 
 export interface ButtonProps {

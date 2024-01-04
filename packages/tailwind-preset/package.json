@@ -2,6 +2,9 @@
   "name": "@acme/tailwind-preset",
   "version": "0.0.0",
   "private": true,
+  "main": "./tailwind.config.ts",
+  "module": "./tailwind.config.ts",
+  "types": "./tailwind.config.ts",
   "exports": {
     ".": "./tailwind.config.ts"
   },
