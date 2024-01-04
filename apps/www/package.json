@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@acme/ui": "workspace:*",
     "react": "^18",
     "react-dom": "^18",
     "next": "14.0.4"
   },
   "devDependencies": {
+    "@acme/tailwind-preset": "workspace:*",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",

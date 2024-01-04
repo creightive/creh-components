@@ -93,6 +93,9 @@ importers:
 
   apps/www:
     dependencies:
+      '@acme/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       next:
         specifier: 14.0.4
         version: 14.0.4(react-dom@18.2.0)(react@18.2.0)
@@ -103,6 +106,9 @@ importers:
         specifier: ^18
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@acme/tailwind-preset':
+        specifier: workspace:*
+        version: link:../../packages/tailwind-preset
       '@types/node':
         specifier: ^20
         version: 20.10.6
