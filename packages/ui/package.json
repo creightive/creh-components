@@ -27,5 +27,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@headlessui/react": "2.0.0-alpha.4",
+    "clsx": "^2.1.0"
   }
 }
